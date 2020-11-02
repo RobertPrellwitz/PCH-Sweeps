@@ -4,8 +4,27 @@ using System.Text;
 
 namespace Swepstakes
 {
-    class SweepstakesQueueManager
+    public class SweepstakesQueueManager : ISweepstakesManager
     {
         // queue data structure
+        Queue<SweepStakes> queue = new Queue<SweepStakes>();
+
+        public SweepstakesQueueManager()
+        { 
+        }
+
+
+        public void InsertSweepstakes(SweepStakes sweepstakes)
+        {
+
+        }
+
+        // get sweepstakes
+        public SweepStakes GetSweepStakes()
+
+        {
+
+        }
     }
+
 }

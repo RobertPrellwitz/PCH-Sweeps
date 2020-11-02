@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Swepstakes
 {
-    class Contestant
+    public class Contestant
     {
         string firstName;
         string lastName;

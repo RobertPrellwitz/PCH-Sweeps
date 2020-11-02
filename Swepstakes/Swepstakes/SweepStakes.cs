@@ -4,26 +4,37 @@ using System.Text;
 
 namespace Swepstakes
 {
-    class SweepStakes
+    public class SweepStakes
     {
+        Dictionary<int, Contestant> contestants;
+        private string name;
+        public string Name { get; set; }
 
+
+        public SweepStakes()
+        {
+            contestants = new Dictionary<int, Contestant>();
+        }
+
+        public void RegisterContestant(Contestant contestant)
+        {
+
+        }
+
+        public void PrintContestandInfo(Contestant contestant)
+        {
+
+
+        }
+
+        public Contestant PickWinner()
+        {
+            int i=0; 
+            // Random number generator for i
+
+            return contestants[i];
+        }
     }
-    public string Sweepstakes()
-    {
-
-    }
-
-    public void RegisterContestant(Contestant contestant)
-    {
-
-    }
-
-    public void PrintContestandInfo(Contestant contestant)
-    {
-
-
-    }
-    /// Pick Winner 
 }
 
 

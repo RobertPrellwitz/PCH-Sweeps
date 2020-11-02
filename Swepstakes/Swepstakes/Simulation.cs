@@ -4,8 +4,12 @@ using System.Text;
 
 namespace Swepstakes
 {
-    interface IUserInterface
+    class Simulation
     {
-        static string GetUserInputFor(string);
+        public Simulation()
+        {
+
+        }
     }
+    
 }

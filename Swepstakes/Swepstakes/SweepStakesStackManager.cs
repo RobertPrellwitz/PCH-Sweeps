@@ -5,19 +5,26 @@ using System.Text;
 
 namespace Swepstakes
 {
-    public class SweepStakesStackManager : ISweepstaeksManager
+    public class SweepStakesStackManager : ISweepstakesManager
     {
         //stackmamager data structrue
         Stack<SweepStakes> stack = new Stack<SweepStakes> ();
+        public SweepStakesStackManager()
+        {
+            
+        }
 
         //insert sweepstakes
-        public void InsertSweepstakes(SweepStakes sweeptakes)
+        public void InsertSweepstakes(SweepStakes sweepstakes)
         {
-
+            
         }
 
         // get sweepstakes
-        public SweepStakes GetSweepstakes();
+        public SweepStakes GetSweepStakes()
+        {
+
+        }
 
     }
 
