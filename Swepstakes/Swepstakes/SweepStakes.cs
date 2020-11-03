@@ -9,7 +9,7 @@ namespace Swepstakes
         Dictionary<int, Contestant> contestants;
         private string name;
         public string Name { get; set; }
-
+        public int RegistrationNumber=0;
 
         public SweepStakes()
         {
@@ -18,13 +18,19 @@ namespace Swepstakes
 
         public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestant.registrationNumber,contestant);
         }
 
         public void PrintContestandInfo(Contestant contestant)
         {
 
 
+        }
+
+        public int registrationCounter(SweepStakes sweepStakes)
+        {
+            RegistrationNumber = RegistrationNumber + 1;
+            return RegistrationNumber;
         }
 
         public Contestant PickWinner()

@@ -5,10 +5,18 @@ using System.Text;
 namespace Swepstakes
 {
     public class Contestant
+
     {
-        string firstName;
-        string lastName;
-        string email;
-        int registrationNumber;
+        public string firstName;
+        public string lastName;
+        public string email;
+        public int registrationNumber;
+        public Contestant()
+        {
+            
+        
+
+        
+        }
     }
 }
