@@ -10,6 +10,7 @@ namespace Swepstakes
         private string name;
         public string Name { get; set; }
         public int RegistrationNumber=0;
+        Random rand;
 
         public SweepStakes()
         {
@@ -23,7 +24,10 @@ namespace Swepstakes
 
         public void PrintContestandInfo(Contestant contestant)
         {
-
+            Console.WriteLine($"Contestant First Name: {contestant.firstName}");
+            Console.WriteLine($"Contestant Last Name: {contestant.lastName}");
+            Console.WriteLine($"Contestant email address: {contestant.email}");
+            Console.WriteLine($"Contestant Registration Number: {contestant.registrationNumber}");
 
         }
 
@@ -35,9 +39,10 @@ namespace Swepstakes
 
         public Contestant PickWinner()
         {
-            int i=0; 
-            // Random number generator for i
-
+            rand = new Random();
+            int i;
+            i = rand.Next(RegistrationNumber);
+            
             return contestants[i];
         }
     }
