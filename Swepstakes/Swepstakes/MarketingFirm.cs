@@ -9,14 +9,17 @@ namespace Swepstakes
         ISweepstakesManager manager;
 
 
-        public MarketingFirm()
+        public MarketingFirm(ISweepstakesManager manager)
         {
-
+            this.manager = manager;
         }
         public void CreateSweepstakes()
         {
             SweepStakes sweepStakes = new SweepStakes();
+            manager.InsertSweepstakes(sweepStakes);
+            
 
         }
+        
     }
 }

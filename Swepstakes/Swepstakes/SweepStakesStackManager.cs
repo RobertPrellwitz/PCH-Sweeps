@@ -17,13 +17,14 @@ namespace Swepstakes
         //insert sweepstakes
         public void InsertSweepstakes(SweepStakes sweepstakes)
         {
-            
+            stack.Push(sweepstakes);
         }
 
         // get sweepstakes
         public SweepStakes GetSweepStakes()
         {
-
+            return stack.Pop();
+            
         }
 
     }

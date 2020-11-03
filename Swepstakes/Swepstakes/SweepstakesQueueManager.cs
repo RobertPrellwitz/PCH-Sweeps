@@ -16,14 +16,14 @@ namespace Swepstakes
 
         public void InsertSweepstakes(SweepStakes sweepstakes)
         {
-
+            queue.Enqueue(sweepstakes);
         }
 
         // get sweepstakes
         public SweepStakes GetSweepStakes()
 
-        {
-
+        { 
+            return queue.Dequeue();
         }
     }
 
