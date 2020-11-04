@@ -28,6 +28,13 @@ namespace Swepstakes
             return newContestant;
                 
         }
+        public static string GetUserInputFor()
+        {
+            string temp;
+            Console.WriteLine( "Please Enter 'stack' for stack sweepstakes method or 'queue' for the queue method" );
+            temp = Console.ReadLine();
+            return temp;
+        }
     }
         
 }
