@@ -8,15 +8,15 @@ namespace Swepstakes
     {
         ISweepstakesManager manager;
 
-
+        // dependency injection (constructor injection)
         public MarketingFirm(ISweepstakesManager manager)
         {
             this.manager = manager;
         }
         public void CreateSweepstakes()
         {
-            SweepStakes sweepStakes = new SweepStakes();
-            manager.InsertSweepstakes(sweepStakes);
+            SweepStakes PCHsweepStakes = new SweepStakes();
+            manager.InsertSweepstakes(PCHsweepStakes);
             
 
         }

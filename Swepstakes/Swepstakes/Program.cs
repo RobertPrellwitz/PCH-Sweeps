@@ -7,6 +7,10 @@ namespace Swepstakes
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Simulation tester = new Simulation();
+            tester.CreateMarketingFirmWithManager();
+
         }
     }
 }
